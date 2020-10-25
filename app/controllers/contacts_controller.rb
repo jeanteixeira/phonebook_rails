@@ -15,10 +15,13 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
+    options_for_select
+   
   end
 
   # GET /contacts/1/edit
   def edit
+    options_for_select
   end
 
   # POST /contacts
@@ -70,5 +73,9 @@ class ContactsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def contact_params
       params.require(:contact).permit(:name, :email, :kind_id, :rmk)
+    end
+
+    def options_for_select
+      @kind_options = Kind.all      
     end
 end
