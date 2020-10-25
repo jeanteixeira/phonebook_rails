@@ -1,0 +1,14 @@
+"pt-BR":
+    hello: "Olá mundo"
+    welcome: "Bem-vindo!"
+
+    activerecord:
+      models:
+        contact: Contact
+      attributes:
+        contact: 
+          name: "Nome"
+          email: "E-mail"
+          kind: "Tipo do Contato"
+          rmk: "Observação"
+        # will translate User attribute "login" as "Handle"
