@@ -29,19 +29,27 @@
 
     <%= form.fields_for :address do |address_field| %>
       <div class="field">
-        <%= address_field.label :Street %>
+        <%= address_field.label :street %>
         <%= address_field.text_field :street %>
       </div>
 
        <div class="field">
-        <%= address_field.label :City %>
+        <%= address_field.label :city %>
         <%= address_field.text_field :city %>
       </div>
 
        <div class="field">
-        <%= address_field.label :State %>
+        <%= address_field.label :state %>
         <%= address_field.select :state, options_for_states(contact.address.state) %>
       </div>
+    <% end %>
+
+    <%= form.fields_for :phones do |phones_field| %>
+      <div class="field">
+        <%= phones_field.label :phone %>
+        <%= phones_field.text_field :phone %>
+      </div>
+
     <% end %>
 
 

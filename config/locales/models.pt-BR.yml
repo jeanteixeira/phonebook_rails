@@ -7,6 +7,9 @@
       address:
         one: Endereço
         other: Endereços
+      phone:
+        one: Telefone
+        other: Telefones
     attributes:
       contact: 
         name: Nome
@@ -15,8 +18,10 @@
         kind_id: Tipo de Contato
         rmk: Observação
       address:
-        Street: Rua
-        City: Cidade
-        State: Estado
-        Contact_id: Contato
-        Contact: Contato
+        street: Rua
+        city: Cidade
+        state: Estado
+        contact_id: Contato
+        contact: Contato
+      phone:
+        phone: Telefone
