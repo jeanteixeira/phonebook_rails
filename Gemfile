@@ -51,6 +51,9 @@ group :development do
 
   #This gem is a port of Perl's Data::Faker library that generates fake data.
   gem 'faker'
+
+  #O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+  gem 'lerolero_generator'
 end
 
 group :test do
